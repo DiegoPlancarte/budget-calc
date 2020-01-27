@@ -85,10 +85,10 @@ class Transportation extends React.Component {
             </Form>
 
             <Link to="/pages/home"
-            className= "btn btn-primary">Back</Link>
+            className= "btn btn-secondary">Back</Link>{' '}
 
             <Link to="/pages/other"
-            className= "btn btn-primary">Next</Link>
+            className= "btn btn-secondary">Next</Link>
       </div>
     )
   }

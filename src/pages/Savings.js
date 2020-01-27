@@ -73,7 +73,7 @@ class Savings extends React.Component {
             </Form>
 
             <Link to="/pages/other"
-            className= "btn btn-primary">Back</Link>
+            className= "btn btn-secondary">Back</Link>
 
       </div>
     )

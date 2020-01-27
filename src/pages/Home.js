@@ -109,10 +109,10 @@ class Home extends React.Component {
             </Form>
 
             <Link to="/pages/income"
-            className= "btn btn-primary">Back</Link>
+            className= "btn btn-secondary">Back</Link>{' '}
 
             <Link to="/pages/transportation"
-            className= "btn btn-primary">Next</Link>
+            className= "btn btn-secondary">Next</Link>
       </div>
     )
   }

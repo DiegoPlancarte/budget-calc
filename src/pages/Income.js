@@ -19,6 +19,11 @@ class Income extends React.Component {
   this.setState({income: income})
   }
 
+  handleIncome = () =>{
+    this.props.income(this.state.form)
+    this.setState({income: income})
+  }
+
   render(){
     return(
       <div>
@@ -47,7 +52,7 @@ class Income extends React.Component {
                         />
                 </FormGroup>
             </Form>
-            <Link to="/pages/home" className= "btn btn-primary">Next</Link>
+            <Link to="/pages/home" className="btn btn-secondary">Next</Link>
       </div>
     )
   }

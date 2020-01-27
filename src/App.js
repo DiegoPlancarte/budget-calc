@@ -45,7 +45,19 @@ class App extends React.Component {
           sav_other: null,
         }
     }
+    this.handleChange = this.handleChange.bind(this);
   }
+
+  handleChange = (event) => {
+  let {income, house_exps, transp_exps, other_exps, savings} = this.state
+  income[event.target.name] = event.target.value
+  this.setState({income: income,
+                house_exps: house_exps,
+                transp_exps: transp_exps,
+                other_exps: other_exps,
+                savings: savings})
+  }
+
   render(){
     return (
       <div>
@@ -60,21 +72,11 @@ class App extends React.Component {
           <Row>
             <Col sm="4">
               <ButtonGroup vertical>
-                <Button>
-                  <Link to="/pages/income">Income</Link>
-                </Button>
-                <Button>
-                  <Link to="/pages/home">Home</Link>
-                </Button>
-                <Button>
-                  <Link to="/pages/transportation">Transportation</Link>
-                </Button>
-                <Button>
-                  <Link to="/pages/other">Other Expenses</Link>
-                </Button>
-                <Button>
-                  <Link to="/pages/savings">Savings</Link>
-                </Button>
+                  <Link to="/pages/income" className= "btn btn-primary">Income</Link>
+                  <Link to="/pages/home" className= "btn btn-primary">Home</Link>
+                  <Link to="/pages/transportation" className= "btn btn-primary">Transportation</Link>
+                  <Link to="/pages/other" className= "btn btn-primary">Other Expenses</Link>
+                  <Link to="/pages/savings" className= "btn btn-primary">Savings</Link>
               </ButtonGroup>
             </Col>
 

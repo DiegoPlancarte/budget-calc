@@ -73,10 +73,10 @@ class Other extends React.Component {
             </Form>
 
             <Link to="/pages/transportation"
-            className= "btn btn-primary">Back</Link>
+            className= "btn btn-secondary">Back</Link>{' '}
 
-            <Link to="/pages/other"
-            className= "btn btn-primary">Next</Link>
+            <Link to="/pages/savings"
+            className= "btn btn-secondary">Next</Link>
       </div>
     )
   }
